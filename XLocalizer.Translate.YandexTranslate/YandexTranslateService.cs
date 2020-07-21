@@ -27,7 +27,7 @@ namespace XLocalizer.Translate.YandexTranslate
         {
             _httpClient = httpClient;
             _logger = logger;
-            _yandexTranslateApiKey = configuration["XLocalizer.TranslationServices:YandexTranslateApiKey"];
+            _yandexTranslateApiKey = configuration["XLocalizer.Translate:YandexTranslateApiKey"];
         }
 
         /// <summary>

@@ -7,7 +7,7 @@ Instructions to use this package :
 
 ````
 {
-  "XLocalizer.TranslationServices": {
+  "XLocalizer.Translate": {
     "YandexTranslateApiKey": "xxx-yandex-translate-api-key-xxx"
   }
 }
@@ -15,7 +15,7 @@ Instructions to use this package :
 
 - Register in startup:
 ````
-services.AddHttpClient<ITranslationService, YandexTranslateService>();
+services.AddHttpClient<ITranslator, YandexTranslateService>();
 ````
 
 Repository: https://github.com/LazZiya/TranslationServices
