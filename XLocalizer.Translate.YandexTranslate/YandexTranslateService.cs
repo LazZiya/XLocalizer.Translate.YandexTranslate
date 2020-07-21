@@ -11,7 +11,7 @@ namespace XLocalizer.Translate.YandexTranslate
     /// <summary>
     /// Yandex translate service
     /// </summary>
-    public class YandexTranslateStringTranslator : IStringTranslator
+    public class YandexTranslateService : ITranslator
     {
         private readonly HttpClient _httpClient;
         private readonly ILogger _logger;
@@ -23,7 +23,7 @@ namespace XLocalizer.Translate.YandexTranslate
         /// <param name="httpClient"></param>
         /// <param name="configuration"></param>
         /// <param name="logger"></param>
-        public YandexTranslateStringTranslator(HttpClient httpClient, IConfiguration configuration, ILogger<YandexTranslateStringTranslator> logger)
+        public YandexTranslateService(HttpClient httpClient, IConfiguration configuration, ILogger<YandexTranslateService> logger)
         {
             _httpClient = httpClient;
             _logger = logger;

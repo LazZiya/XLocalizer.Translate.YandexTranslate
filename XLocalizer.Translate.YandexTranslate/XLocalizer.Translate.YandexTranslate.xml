@@ -24,12 +24,12 @@
             Translated text
             </summary>
         </member>
-        <member name="T:XLocalizer.Translate.YandexTranslate.YandexTranslateStringTranslator">
+        <member name="T:XLocalizer.Translate.YandexTranslate.YandexTranslateService">
             <summary>
             Yandex translate service
             </summary>
         </member>
-        <member name="M:XLocalizer.Translate.YandexTranslate.YandexTranslateStringTranslator.#ctor(System.Net.Http.HttpClient,Microsoft.Extensions.Configuration.IConfiguration,Microsoft.Extensions.Logging.ILogger{XLocalizer.Translate.YandexTranslate.YandexTranslateStringTranslator})">
+        <member name="M:XLocalizer.Translate.YandexTranslate.YandexTranslateService.#ctor(System.Net.Http.HttpClient,Microsoft.Extensions.Configuration.IConfiguration,Microsoft.Extensions.Logging.ILogger{XLocalizer.Translate.YandexTranslate.YandexTranslateService})">
             <summary>
             Initialize yandex translate service
             </summary>
@@ -37,12 +37,12 @@
             <param name="configuration"></param>
             <param name="logger"></param>
         </member>
-        <member name="P:XLocalizer.Translate.YandexTranslate.YandexTranslateStringTranslator.ServiceName">
+        <member name="P:XLocalizer.Translate.YandexTranslate.YandexTranslateService.ServiceName">
             <summary>
             Service name
             </summary>
         </member>
-        <member name="M:XLocalizer.Translate.YandexTranslate.YandexTranslateStringTranslator.TranslateAsync(System.String,System.String,System.String,System.String)">
+        <member name="M:XLocalizer.Translate.YandexTranslate.YandexTranslateService.TranslateAsync(System.String,System.String,System.String,System.String)">
             <summary>
             Run async translation task
             </summary>
@@ -52,7 +52,7 @@
             <param name="format">Text format: html or text</param>
             <returns><see cref="T:XLocalizer.Translate.TranslationResult"/></returns>
         </member>
-        <member name="M:XLocalizer.Translate.YandexTranslate.YandexTranslateStringTranslator.TryTranslate(System.String,System.String,System.String,System.String@)">
+        <member name="M:XLocalizer.Translate.YandexTranslate.YandexTranslateService.TryTranslate(System.String,System.String,System.String,System.String@)">
             <summary>
             
             </summary>
