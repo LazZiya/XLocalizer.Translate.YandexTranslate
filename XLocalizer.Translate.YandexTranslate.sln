@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30310.162
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XLocalizer.Translate.YandexTranslate", "XLocalizer.Translate.YandexTranslate\XLocalizer.Translate.YandexTranslate.csproj", "{4750CF8E-6075-4389-9656-160380AAF95C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4750CF8E-6075-4389-9656-160380AAF95C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4750CF8E-6075-4389-9656-160380AAF95C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4750CF8E-6075-4389-9656-160380AAF95C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4750CF8E-6075-4389-9656-160380AAF95C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F10E781F-7B85-4A28-8688-8B82F3781233}
+	EndGlobalSection
+EndGlobal
