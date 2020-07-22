@@ -16,7 +16,6 @@ namespace XLocalizer.Translate.YandexTranslate
         private readonly HttpClient _httpClient;
         private readonly ILogger _logger;
         private readonly string _yandexTranslateApiKey;
-
         /// <summary>
         /// Initialize yandex translate service
         /// </summary>
@@ -25,9 +24,9 @@ namespace XLocalizer.Translate.YandexTranslate
         /// <param name="logger"></param>
         public YandexTranslateService(HttpClient httpClient, IConfiguration configuration, ILogger<YandexTranslateService> logger)
         {
-            _httpClient = httpClient;
+            _httpClient = httpClient ?? throw new NullReferenceException(nameof(httpClient));
+            _yandexTranslateApiKey = configuration["XLocalizer.Translate:YandexTranslateApiKey"] ?? throw new NullReferenceException("YandexTranslateApiKey");
             _logger = logger;
-            _yandexTranslateApiKey = configuration["XLocalizer.Translate:YandexTranslateApiKey"];
         }
 
         /// <summary>
@@ -45,12 +44,6 @@ namespace XLocalizer.Translate.YandexTranslate
         /// <returns><see cref="TranslationResult"/></returns>
         public async Task<TranslationResult> TranslateAsync(string source, string target, string text, string format)
         {
-
-            if (string.IsNullOrWhiteSpace(_yandexTranslateApiKey))
-            {
-                throw new NullReferenceException(nameof(_yandexTranslateApiKey));
-            }
-
             try
             {
                 var response = await _httpClient.GetAsync($"https://translate.yandex.net/api/v1.5/tr.json/translate?key={_yandexTranslateApiKey}&text={text}&lang={source}-{target}&format={format}");

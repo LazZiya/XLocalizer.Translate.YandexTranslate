@@ -1,4 +1,4 @@
-﻿XLocalizer.TranslationServices.YandexTranslate
+﻿XLocalizer.Translate.YandexTranslate
 
 Instructions to use this package :
 
@@ -18,4 +18,4 @@ Instructions to use this package :
 services.AddHttpClient<ITranslator, YandexTranslateService>();
 ````
 
-Repository: https://github.com/LazZiya/TranslationServices
+Repository: https://github.com/LazZiya/XLocalizer.Translate.YandexTranslate
