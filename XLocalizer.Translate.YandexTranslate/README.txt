@@ -19,3 +19,4 @@ services.AddHttpClient<ITranslator, YandexTranslateService>();
 ````
 
 Repository: https://github.com/LazZiya/XLocalizer.Translate.YandexTranslate
+Docs: https://docs.ziyad.info/en/XLocalizer/v1.0/translate-services-yandex.md
